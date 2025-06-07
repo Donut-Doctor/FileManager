@@ -25,7 +25,6 @@ const server = http.createServer((req, res) => {
         res.end('File content: ' + data);
       }
     });
-
   } else if (url === '/delete') {
     fs.unlink(filePath, (err) => {
       if (err) {
